@@ -1,7 +1,9 @@
 from textblob import TextBlob
 import numpy as np
 from rake_nltk import Rake
+import nltk
 
+nltk.download('averaged_perceptron_tagger')
 
 
 
@@ -49,7 +51,7 @@ questions = ["What do you feel about the teaching?",
 
 def converse():
 	for i in questions:
-		print("SHITBOT: ",i)
+		print("CHATWISE: ",i)
 		ans = input(">>")
 		while (filter_questions(ans)):
 			print("SHITBOT: ",i)

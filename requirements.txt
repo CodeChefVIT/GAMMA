@@ -1,0 +1,4 @@
+textblob
+numpy
+rake_nltk
+nltk
